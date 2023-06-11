@@ -17,19 +17,19 @@ PUB_KEY = ''	# Path to public key
 PRV_KEY = ''	# Path to private key
 PFX_FIL = ''	# Path to pfx file
 PFX_PWD = ''	# PFX File Password
-EXT = '.sig'  # Singature file extention
+EXT = '.sig'    # Singature file extention
 #----
 
 
 #------- Important: don't change after this line unless you know what you're doing
 RSASSA_PSS = False # Set to ture to use the Probabilistic Signature Scheme. For more info see https://tools.ietf.org/html/rfc3447.html
-HASH = 5	# Hashing alogrithm, to change choose a number from below
+HASH = 5 # Hashing alogrithm, to change choose a number from below
 	
-	### 0 -> sha    		### 6 -> sha384
-	### 1 -> sha1   		### 7 -> sha512
-	### 2 -> mdc2   		### 8 -> md2
+	### 0 -> sha    	### 6 -> sha384
+	### 1 -> sha1   	### 7 -> sha512
+	### 2 -> mdc2   	### 8 -> md2
 	### 3 -> ripemd160	### 9 -> md4
-	### 4 -> sha224		  ### 10 -> md5
+	### 4 -> sha224		### 10 -> md5
 	### 5 -> sha256	  	### 11 -> dss1
 	
 SIGN = NTV = 0 # NATIVE, no RSASSA-PSS Support
