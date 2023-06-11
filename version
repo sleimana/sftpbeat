@@ -1,0 +1,2 @@
+import sftpbeat
+sftpbeat.getVersion()
