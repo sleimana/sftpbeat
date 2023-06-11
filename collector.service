@@ -1,0 +1,16 @@
+[Unit]
+Description=SFTPBeat Log Collector Service
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+StandardOutput=journal+console
+ExecStart=/usr/bin/python -u /opt/collector/collector.py
+StandardInput=tty-force
+Restart=on-failure
+User=your-user
+Group=your-user
+
+[Install]
+WantedBy=multi-user.target
